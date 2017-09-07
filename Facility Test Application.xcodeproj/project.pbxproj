@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0C234231F612B7F004F7DAA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C234221F612B7F004F7DAA /* Employee.swift */; };
+		E0C234261F612BBB004F7DAA /* EmployeesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C234251F612BBB004F7DAA /* EmployeesManager.swift */; };
 		E0E218D21F612566003F7C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E218D11F612566003F7C14 /* AppDelegate.swift */; };
-		E0E218D41F612566003F7C14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E218D31F612566003F7C14 /* ViewController.swift */; };
+		E0E218D41F612566003F7C14 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E218D31F612566003F7C14 /* MainViewController.swift */; };
 		E0E218D71F612566003F7C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E218D51F612566003F7C14 /* Main.storyboard */; };
 		E0E218D91F612566003F7C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E218D81F612566003F7C14 /* Assets.xcassets */; };
 		E0E218DC1F612566003F7C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E218DA1F612566003F7C14 /* LaunchScreen.storyboard */; };
+		E0E218E41F6125A8003F7C14 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E218E31F6125A8003F7C14 /* DetailsViewController.swift */; };
+		E0E218E61F6129DE003F7C14 /* EmployeeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E218E51F6129DE003F7C14 /* EmployeeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0C234221F612B7F004F7DAA /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		E0C234251F612BBB004F7DAA /* EmployeesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesManager.swift; sourceTree = "<group>"; };
 		E0E218CE1F612566003F7C14 /* Facility Test Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facility Test Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E218D11F612566003F7C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0E218D31F612566003F7C14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0E218D31F612566003F7C14 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E0E218D61F612566003F7C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0E218D81F612566003F7C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0E218DB1F612566003F7C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0E218DD1F612566003F7C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E218E31F6125A8003F7C14 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E0E218E51F6129DE003F7C14 /* EmployeeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0C234201F612B5E004F7DAA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0E218D31F612566003F7C14 /* MainViewController.swift */,
+				E0E218E31F6125A8003F7C14 /* DetailsViewController.swift */,
+				E0E218E51F6129DE003F7C14 /* EmployeeViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E0C234211F612B74004F7DAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0C234221F612B7F004F7DAA /* Employee.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E0C234241F612BAB004F7DAA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E0C234251F612BBB004F7DAA /* EmployeesManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		E0E218C51F612566003F7C14 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +88,10 @@
 		E0E218D01F612566003F7C14 /* Facility Test Application */ = {
 			isa = PBXGroup;
 			children = (
+				E0C234241F612BAB004F7DAA /* Managers */,
+				E0C234211F612B74004F7DAA /* Models */,
+				E0C234201F612B5E004F7DAA /* ViewControllers */,
 				E0E218D11F612566003F7C14 /* AppDelegate.swift */,
-				E0E218D31F612566003F7C14 /* ViewController.swift */,
 				E0E218D51F612566003F7C14 /* Main.storyboard */,
 				E0E218D81F612566003F7C14 /* Assets.xcassets */,
 				E0E218DA1F612566003F7C14 /* LaunchScreen.storyboard */,
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E218D41F612566003F7C14 /* ViewController.swift in Sources */,
+				E0E218E61F6129DE003F7C14 /* EmployeeViewCell.swift in Sources */,
+				E0E218D41F612566003F7C14 /* MainViewController.swift in Sources */,
 				E0E218D21F612566003F7C14 /* AppDelegate.swift in Sources */,
+				E0C234261F612BBB004F7DAA /* EmployeesManager.swift in Sources */,
+				E0C234231F612B7F004F7DAA /* Employee.swift in Sources */,
+				E0E218E41F6125A8003F7C14 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +344,7 @@
 				E0E218E21F612566003F7C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
